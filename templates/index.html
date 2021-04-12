@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<section class="text-gray-600 body-font bg-dark">
+    <div class="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
+        <div
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Welcome to
+                <br class="hidden lg:inline-block">MyKarma Consulting Services
+            </h1>
+            <p class="mb-8 leading-relaxed">MyKarma is created to provide IT consulting services to clients in the areas of AI/ML, Web Development & Maintenance, Digital Transformation, API Integration Cloud Migration, DevOps Automation, Coaching & Training, Release, Change and Delivery Management.</p>
+            <div class="flex justify-center">
+                <button
+                    class="animate-pulse inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"><a href="/contact">Let's Connect</a></button>
+                    <!-- <a href="https://youtu.be/EuCNjoaDIAA" class="venobox" data-autoplay="true" data-vbtype="video"><button
+                    class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">View Our
+                        Video</a></button> -->
+                    <a href="/services#certify"><button
+                    class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Verify your Certificate</a></button>
+            </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <a href="https://youtu.be/EuCNjoaDIAA" class="venobox" data-autoplay="true" data-vbtype="video"><img class="object-cover object-center rounded animate-pulse" alt="hero" src="../static/img/intro.jpg"></a>
+        </div>
+    </div>
+</section>
+<main>
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-16 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">MYKARMA CONSULTING</h2>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Our Services</h1>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+        <a href="/services#digital_automation">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <i class='bx bxl-python'></i>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Digital Automation</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Script automation using python. It could help you to automate many repeated tasks and monotonous work.</p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <a href="/services#full_stack">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col ">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <i class="fa fa-globe"></i>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Full Stack Web Development</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Get fully responsive e-commerce, blogging, portfolio or for your business websites with fully managed services.</p>
+              
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <a href="/services#api_integration">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <i class='bx bx-door-open'></i>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">API Integration</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Integrate various APIs to your script or websites like google captcha, payment gateways, live chats, weather forcasting etc.</p>
+             
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-600 body-font mb-10">
+    <div class="container px-5 py-0 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+          <a href="/services#cloud_migration">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <i class="fa fa-cloud-upload"></i>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Cloud Migration</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Secure your organizations' data by migrating it into various cloud platforms like AWS, GCP or Azure that will also reduce the costs.</p>
+             
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <a href="/services#wordpress">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <i class="fa fa-wordpress"></i>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Build WordPress</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Build your startup or blogging website with WordPress, Wix and many alike. Get awesome plugins to beautify your website.</p>
+              
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <a href="/services#courses_detail">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">Training Courses</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Get high quality training in various courses like Web Development and Python to ensure your dream job or work as a freelancer.</p>
+             
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  <section class="text-gray-600 body-font bg-dark">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">MYKARMA CONSULTING SERVICES</h2>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Why Choose Us?</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We believe there is no parallel to hard work and we work hard every day to deliver solutions and services that help business get secure, reliable, and scalable tech solutions. Software Development is an art that we experience and build at all times that not only feeds our passion but also improves and excels with each iteration. Software Development is in our DNA, we see coding as an ART.</p>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">We are problem solvers</h2>
+          <p class="leading-relaxed text-base mb-4">We are passionate for solving issues faced by the businesses today and help them find a fast, cost effective reliable solution. We Worship Data and ensure that it’s safe, secure and reliable always. </p>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">We are Updated</h2>
+          <p class="leading-relaxed text-base mb-4">As freelancers we keep ourselves ahead in learning and developing skillsets into the most advanced technologies to find the best solution. Our Values are built along the lines of best industry practices.</p>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">We Collaborate</h2>
+          <p class="leading-relaxed text-base mb-4">We build partnerships and network with like minded people to grow along with our partners. We appreciate, thank and value people who are aligned with our goals.</p>
+        </div>
+        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Customize your Prices</h2>
+          <p class="leading-relaxed text-base mb-4">If cost is a constraint, we customize our pricing models to suit your needs and business. You can also pay as which service you use.</p>
+        </div>
+      </div>
+      <a href="/about"><button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">About Us</button></a>
+    </div>
+  </section>
+
+  
+{% endblock body %}

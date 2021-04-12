@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Verify Certificate{% endblock title %}
+
+{% block body %}
+<section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="../static/img/certified.jpg">
+        </div>
+        <div
+            class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">You are Certified
+            </h1>
+            <div class= "h-full bg-gray-100 bg-opacity-75 px-8 pt-8 pb-8 rounded-lg overflow-hidden relative mb-2">
+            <p class="mb-2"><strong>UIC:</strong> {{cert_verify_no}}</p>
+            <p class="mb-2"><strong>Name:</strong> {{cert_name}}</p>
+            <p class="mb-2"><strong>Class/Work:</strong> {{cert_classwork}}</p>
+            <p class="mb-2"><strong>Course:</strong> {{cert_course}}</p>
+            <p class="mb-2"><strong>Course Code:</strong> {{cert_course_code}}</p>
+            <p class="mb-2"><strong>Course Start Date:</strong> {{cert_start_date}}</p>
+            <p class="mb-2"><strong>Date of Issue:</strong> {{cert_issued_date}}</p>
+            <p class="mb-2"><strong>Certification Test Max Marks:</strong> {{cert_max_marks}}</p>
+            <p class="mb-2"><strong>Marks Gained:</strong> {{cert_marks_gain}}</p>
+            <p class="mb-2"><strong>Pass/Fail:</strong> {{cert_pass_fail}}</p>
+            </div>
+            <div class="flex justify-center">
+                <button
+                    class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"><a
+                        href="/">Return to Home</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}
+{% block newsletter %}{% endblock newsletter %}
