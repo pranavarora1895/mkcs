@@ -4,6 +4,13 @@
 
 _This website was made using Python Django Framework, Tailwind CSS and few APIs such as Tawk Live Chat API, Venobox API and Google Tag Manager API._
 
+> ### Some of the Django features are showcased
+
+* Django's ORM for certificate verification system
+* Google Recaptcha Integration
+* Template Inheritance
+* Creating REST APIs
+
 ---
 > ### Django MVT Architecture
 ![image](https://www.javatpoint.com/django/images/django-mvt-based-control-flow.png)
